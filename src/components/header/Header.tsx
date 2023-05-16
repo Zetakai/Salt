@@ -1,12 +1,12 @@
 import {View, Text, StyleSheet, Image} from 'react-native';
 import React, {memo} from 'react';
 import {ms} from 'react-native-size-matters';
-import {IconMobile} from '../assets/icons';
-import Spacer from './Spacer';
-import {Typography} from '../assets/theme/Typography';
-import {Red, White} from '../assets/theme/Colors';
+import {IconMobile} from '../../assets/icons';
+import Spacer from '../Spacer';
+import {Typography} from '../../assets/theme/Typography';
+import {Red, White} from '../../assets/theme/Colors';
 interface Props {
-  count?: number;
+  count?: number|null;
 }
 const Header: React.FC<Props> = ({count}) => {
   return (
@@ -16,7 +16,7 @@ const Header: React.FC<Props> = ({count}) => {
         <Spacer horizontal length={ms(21.33)} />
         <View>
           <Text style={[Typography.h1, {color: White}]}>Product List</Text>
-          {count && (
+          {count!==null && (
             <>
               <Spacer length={ms(5)}/>
               <Text style={[Typography.h2, {color: White}]}>
