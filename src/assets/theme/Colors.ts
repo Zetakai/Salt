@@ -1,6 +1,10 @@
 export const White: string = '#FFFFFF'
 export const Grey: string = '#3A4144'
+export const DimGrey: string = '#CFCFCF'
+export const GreyDesc: string = '#7D8285'
 export const GreyWhite: string = '#F6F6F6'
 export const BorderGrey: string = '#F0F0F0'
 export const Red: string = '#D81A3C'
-export const Background: string ='#FBFBFB'
+export const Footer: string = '#D81A3C'
+export const Background: string = '#FBFBFB'
+export const Total: string = "#262627"

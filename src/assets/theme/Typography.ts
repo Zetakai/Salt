@@ -13,5 +13,13 @@ export const Typography = StyleSheet.create({
     fontSize: ms(14),
     fontFamily: 'FiraSans-Bold',
   },
+  b1: {
+    fontSize: ms(16),
+    fontFamily: 'FiraSans-Regular',
+  },
+  total: {
+    fontSize: ms(18),
+    fontFamily: 'FiraSans-Bold',
+  },
 
 });
